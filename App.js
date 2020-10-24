@@ -1,10 +1,7 @@
-import React from 'react';
+//import React from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
-
-const Tab = createMaterialBottomTabNavigator();
-
-import {
+import React, {
   SafeAreaView,
   StyleSheet,
   ScrollView,
@@ -12,7 +9,6 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
-
 import {
   Header,
   LearnMoreLinks,
@@ -20,6 +16,8 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+
+const Tab = createMaterialBottomTabNavigator();
 
 function ProfileScreen() {
   return (
