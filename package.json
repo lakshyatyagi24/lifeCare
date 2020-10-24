@@ -10,8 +10,10 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-navigation/material-bottom-tabs": "^5.2.19",
     "react": "16.13.1",
-    "react-native": "0.63.3"
+    "react-native": "0.63.3",
+    "react-native-paper": "^4.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.0",
