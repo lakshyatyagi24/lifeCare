@@ -1,7 +1,7 @@
-//import React from 'react-native';
+import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
-import React, {
+import ReactNative, {
   SafeAreaView,
   StyleSheet,
   ScrollView,
@@ -9,13 +9,7 @@ import React, {
   Text,
   StatusBar,
 } from 'react-native';
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import Icon from 'react-native-ionicons';
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -67,7 +61,7 @@ export default function App() {
               iconName = focused ? 'ios-list-box' : 'ios-list';
             }
 
-            return <Ionicons name={iconName} size={size} color={color} />;
+            return <Icon name={iconName} size={size} color={color} />;
           },
         })}
 
